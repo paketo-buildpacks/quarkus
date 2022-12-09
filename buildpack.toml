@@ -16,7 +16,7 @@ api = "0.6"
 
 [buildpack]
   description = "A Cloud Native Buildpack that provides/does Quarkus."
-  homepage = "https://example.com/"
+  homepage = "https://github.com/paketo-buildpacks/quarkus"
   id = "paketo-buildpacks/quarkus"
   keywords = ["quarkus"]
   name = "Paketo Quarkus Buildpack"
