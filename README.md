@@ -1,4 +1,7 @@
-# `gcr.io/paketo-buildpacks/quarkus`
+# Paketo Buildpack for Quarkus
+
+## Buildpack ID: `paketo-buildpacks/quarkus`
+## Registry URLs: `docker.io/paketobuildpacks/quarkus`
 
 The Paketo Quarkus Buildpack is a Cloud Native Buildpack that sets environment variables for the `maven` and `native-image` buildpacks when building Quarkus app.
 
