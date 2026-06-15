@@ -28,7 +28,7 @@ api = "0.7"
     uri = "https://github.com/paketo-buildpacks/quarkus/blob/main/LICENSE"
 
 [metadata]
-  include-files = ["LICENSE", "NOTICE", "README.md", "linux/amd64/bin/build", "linux/amd64/bin/detect", "linux/amd64/bin/main", "linux/arm64/bin/build", "linux/arm64/bin/detect", "linux/arm64/bin/main", "buildpack.toml"]
+  include-files = ["LICENSE", "NOTICE", "README.md", "linux/amd64/bin/build", "linux/amd64/bin/detect", "linux/amd64/bin/main", "linux/arm64/bin/build", "linux/arm64/bin/detect", "linux/arm64/bin/main", "linux/s390x/bin/build", "linux/s390x/bin/detect", "linux/s390x/bin/main", "linux/ppc64le/bin/build", "linux/ppc64le/bin/detect", "linux/ppc64le/bin/main", "buildpack.toml"]
   pre-package = "scripts/build.sh"
 
   [[metadata.configurations]]
@@ -47,4 +47,12 @@ api = "0.7"
 
 [[targets]]
   arch = "arm64"
+  os = "linux"
+
+[[targets]]
+  arch = "s390x"
+  os = "linux"
+
+[[targets]]
+  arch = "ppc64le"
   os = "linux"
