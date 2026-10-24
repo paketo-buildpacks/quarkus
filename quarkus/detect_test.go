@@ -1,7 +1,6 @@
 package quarkus_test
 
 import (
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"testing"
@@ -23,7 +22,7 @@ func testDetect(t *testing.T, context spec.G, it spec.S) {
 	it.Before(func() {
 		var err error
 
-		ctx.Application.Path, err = ioutil.TempDir("", "quarkus")
+		ctx.Application.Path, err = os.MkdirTemp("", "quarkus")
 		Expect(err).NotTo(HaveOccurred())
 	})
 
