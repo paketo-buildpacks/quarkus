@@ -73,12 +73,12 @@ func testBuild(t *testing.T, context spec.G, it spec.S) {
 
 func withEnvVar(key, value string) func() {
 	oldNative, hadNative := os.LookupEnv(key)
-	os.Setenv(key, value)
+	_ = os.Setenv(key, value)
 	return func() {
 		if hadNative {
-			os.Setenv(key, oldNative)
+			_ = os.Setenv(key, oldNative)
 		} else {
-			os.Unsetenv(key)
+			_ = os.Unsetenv(key)
 		}
 	}
 }
